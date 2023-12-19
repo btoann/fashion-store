@@ -1,0 +1,95 @@
+.content-left-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: #dee2e6;
+  padding: 10px 15px;
+  display: block;
+  margin-bottom: 1px;
+}
+
+.edit-profile-form {
+  padding: 20px;
+}
+@media (min-width: 576px) {
+  .edit-profile-form {
+    padding: 40px;
+  }
+}
+.edit-profile-form .form-group {
+  display: flex;
+  align-items: center;
+}
+.edit-profile-form .form-control-label {
+  margin-bottom: 0;
+}
+
+.invisible {
+  visibility: hidden !important;
+}
+.bg-gray-200 {
+  background-color: #e9ecef;
+}
+
+/**** EDIT PROFILE PAGE *****/
+.edit-profile-photo {
+  position: relative;
+}
+.edit-profile-photo figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+}
+.edit-profile-photo:hover figcaption,
+.edit-profile-photo:focus figcaption {
+  opacity: 1;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.btn-dark {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+}
+.btn,
+.sp-container button {
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1 px solid transparent;
+  padding: 0.65 rem 0.75 rem;
+  font-size: 0.875rem;
+  line-height: 1.25;
+  border-radius: 2 px;
+  transition: all 0.15s ease-in-out;
+}
+
+.mg-t-10 {
+  margin-top: 10px;
+}
+
+.mg-t-20 {
+  margin-top: 20px;
+}
+
+.mg-t-30 {
+  margin-top: 30px;
+}
+
+.mg-b-30 {
+  margin-bottom: 30px;
+}

@@ -1,0 +1,199 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input[type="radio"][name="color"],
+input[type="radio"][name="size"] {
+  display: none;
+}
+
+input[type="radio"][name="color"]:checked + label span {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+input[type="radio"][name="color"]:checked + label .red {
+  border: 2px solid #711313;
+}
+
+input[type="radio"][name="color"]:checked + label .orange {
+  border: 2px solid #873a08;
+}
+
+input[type="radio"][name="color"]:checked + label .yellow {
+  border: 2px solid #816102;
+}
+
+input[type="radio"][name="color"]:checked + label .olive {
+  border: 2px solid #505a0b;
+}
+
+input[type="radio"][name="color"]:checked + label .green {
+  border: 2px solid #0e4e1d;
+}
+
+input[type="radio"][name="color"]:checked + label .teal {
+  border: 2px solid #003633;
+}
+
+input[type="radio"][name="color"]:checked + label .blue {
+  border: 2px solid #103f62;
+}
+
+input[type="radio"][name="color"]:checked + label .violet {
+  border: 2px solid #321a64;
+}
+
+input[type="radio"][name="color"]:checked + label .purple {
+  border: 2px solid #501962;
+}
+
+input[type="radio"][name="color"]:checked + label .pink {
+  border: 2px solid #851554;
+}
+
+label.color-label {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+label.color-label:hover span {
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+
+label.color-label span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+
+label.color-label span.red {
+  background: #db2828;
+}
+
+label.color-label span.orange {
+  background: #f2711c;
+}
+
+label.color-label span.yellow {
+  background: #fbbd08;
+}
+
+label.color-label span.olive {
+  background: #b5cc18;
+}
+
+label.color-label span.green {
+  background: #21ba45;
+}
+
+label.color-label span.teal {
+  background: #00b5ad;
+}
+
+label.color-label span.blue {
+  background: #2185d0;
+}
+
+label.color-label span.violet {
+  background: #6435c9;
+}
+
+label.color-label span.purple {
+  background: #a333c8;
+}
+
+label.color-label span.pink {
+  background: #e03997;
+}
+
+/** 
+  Rating star
+*/
+.star-cb-group {
+  /* remove inline-block whitespace */
+  font-size: 0;
+  /* flip the order so we can use the + and ~ combinators */
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  /* the hidden clearer */
+}
+
+.star-cb-group * {
+  font-size: 1rem;
+}
+
+.star-cb-group > input {
+  display: none;
+}
+
+.star-cb-group > input + label {
+  /* only enough room for the star */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 9999px;
+  width: 1em;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.star-cb-group > input + label:before {
+  display: inline-block;
+  text-indent: -9999px;
+  content: "☆";
+  color: #3a89cf;
+}
+
+.star-cb-group > input:checked ~ label:before,
+.star-cb-group > input + label:hover ~ label:before,
+.star-cb-group > input + label:hover:before {
+  content: "★";
+  color: #3a89cf;
+  text-shadow: 0 0 1px #333;
+}
+
+.star-cb-group > .star-cb-clear + label {
+  text-indent: -9999px;
+  width: 0.5em;
+  margin-left: -0.5em;
+}
+
+.star-cb-group > .star-cb-clear + label:before {
+  width: 0.5em;
+}
+
+.star-cb-group:hover > input + label:before {
+  content: "☆";
+  color: #3a89cf;
+  text-shadow: none;
+}
+
+.star-cb-group:hover > input + label:hover ~ label:before,
+.star-cb-group:hover > input + label:hover:before {
+  content: "★";
+  color: #3a89cf;
+  text-shadow: 0 0 1px #333;
+}
+
+.border-2 {
+  border: 2px solid #dee2e6 !important;
+}
+
+.p-3 {
+  padding: 1 rem !important;
+}
+
+.m-3 {
+  margin: 1 rem !important;
+}
+/*# sourceMappingURL=style-2.css.map */
